@@ -1,0 +1,44 @@
+GET
+http://localhost:8080/item
+http://localhost:8080/item/1
+
+1= id item
+
+
+
+POST
+http://localhost:8080/item
+
+data yg di dimasukan raw JSON
+{
+    "name":"Product 6", 
+    "count": "1440", 
+    "price": "100000", 
+    "type": "Electronic", 
+    "description": "Product description"
+    
+}
+
+
+PUT
+http://localhost:8080/item/1
+
+1= id item yang mau diupdate
+misal data sebelumnya count = 1440 mau kita update ke 79
+tinggal ubah dengan data berikut
+{
+    "name":"Product 6", 
+    "count": "79", 
+    "price": "100000", 
+    "type": "Electronic", 
+    "description": "Product description"
+    
+}
+
+
+DELETE
+misal mau delete data item dengan id 2
+ 
+http://localhost:8080/item/2
+
+2 = id item
