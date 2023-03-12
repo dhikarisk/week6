@@ -30,8 +30,8 @@ public class ItemService {
         item.price = request.get("price").toString();
         item.type = request.get("type").toString();
         item.description = request.get("description").toString();
-        item.createdAt = item.getCreatedAt();
-        item.updatedAt = item.getUpdatedAt();
+//        item.createdAt = item.getCreatedAt();
+//        item.updatedAt = item.getUpdatedAt();
 
         item.persist();
 
@@ -48,8 +48,6 @@ public class ItemService {
         item.price = request.get("price").toString();
         item.type = request.get("type").toString();
         item.description = request.get("description").toString();
-        item.createdAt = item.getCreatedAt();
-        item.updatedAt = item.getUpdatedAt();
 
         item.persist();
 
